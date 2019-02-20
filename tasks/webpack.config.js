@@ -19,8 +19,10 @@ module.exports = () => {
       rules: [scriptLoader, styleLoader]
     },
     resolve: {
+      extensions: ['.js', '.jsx'],
       alias: {
-        commons: src.appPath
+        commons: path.resolve(__dirname, '../src/app/commons'),
+        MOCKS: path.resolve(__dirname, '../tasks/helpers/test-helpers.js')
       }
     },
     plugins: [
