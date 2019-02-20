@@ -1,3 +1,4 @@
 {
-  "title": "hello"
+  "title": "hello",
+  "welcome": "welcome {IS_VIP, select, true{master} other{}}"
 }
