@@ -5,7 +5,7 @@ import {I18nProvider} from '@lingui/react';
 import {LocalesService} from './commons/locales/locales';
 import axios from 'axios';
 
-import {App} from './App.jsx';
+import {App} from './App';
 
 const initApp = (language = 'fr') => {
   axios
