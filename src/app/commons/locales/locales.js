@@ -2,7 +2,7 @@ import {setupI18n} from '@lingui/core';
 
 export const LocalesService = {
   init({locales, language}) {
-    let catalogs = {};
+    const catalogs = {};
     catalogs[language] = {
       messages: locales
     };

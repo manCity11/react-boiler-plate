@@ -9,4 +9,4 @@ export class App extends React.Component {
       <p><Trans id="welcome" values={{IS_VIP: true}}/></p>
     </div>;
   }
-};
+}
