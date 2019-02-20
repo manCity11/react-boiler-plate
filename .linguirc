@@ -1,0 +1,6 @@
+{
+  "localeDir": ".tmp/locales",
+  "srcPathDirs": [".tmp/locales"],
+  "format": "minimal",
+  "fallbackLocale": "fr"
+}

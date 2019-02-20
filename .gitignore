@@ -1,0 +1,9 @@
+# FOLDERS
+node_modules
+.vscode
+dist
+.DS_Store
+.tmp
+
+# FILES
+package-lock.json
