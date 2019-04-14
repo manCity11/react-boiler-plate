@@ -1,12 +1,25 @@
 import React from "react";
-import {Trans} from "@lingui/react";
-import "./app.scss";
+import { Route, Switch } from "react-router-dom";
+import { Provider } from "react-redux";
+
+import { APP_ROUTES } from "./app.route";
+import store from "./store/store";
 
 export class App extends React.Component {
   render() {
-    return <div>
-      <h1><Trans id="title"/></h1>
-      <p><Trans id="welcome" values={{IS_VIP: true}}/></p>
-    </div>;
+    return (
+      <Provider store={store}>
+        <Switch>
+          {_.map(APP_ROUTES, (route, i) => (
+            <Route
+              key={i}
+              path={route.path}
+              exact={route.exact}
+              render={props => <route.component {...props} />}
+            />
+          ))}
+        </Switch>
+      </Provider>
+    );
   }
 }
